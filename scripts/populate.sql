@@ -1,29 +1,29 @@
 DROP TABLE IF EXISTS data;
 
 CREATE TABLE "data" (
-"date" TIMESTAMP,
+"date" REAL,
   "pair" TEXT,
   "quantity" INTEGER,
   "price" REAL,
-  "providers" TEXT
+  "provider" TEXT
 );
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00+00:00', 'GBP/EUR', '1998591', '2.31012', 'CBOE');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.0', 'GBP/USD', '1181830', '2.13289', 'CBOE');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.100000+00:00', 'EUR/USD', '1935181', '2.52439', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.1', 'EUR/USD', '1726034', '2.92386', 'CBOE');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.200000+00:00', 'EUR/USD', '1452560', '2.76961', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.2', 'GBP/EUR', '1178238', '1.34977', 'UBS');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.300000+00:00', 'GBP/EUR', '1783938', '2.65587', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.3', 'GBP/EUR', '1632815', '1.37101', 'UBS');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.400000+00:00', 'EUR/USD', '1203219', '1.94936', 'CBOE');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.4', 'EUR/USD', '1484703', '2.7064', 'UBS');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.500000+00:00', 'GBP/EUR', '1423110', '2.40902', 'CBOE');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.5', 'EUR/USD', '1876121', '1.07752', 'CBOE');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.600000+00:00', 'GBP/USD', '1754853', '1.77362', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.6', 'GBP/USD', '1664148', '2.50586', 'CBOE');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.700000+00:00', 'GBP/USD', '1677559', '1.45056', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.7', 'EUR/USD', '1052885', '2.97619', 'CBOE');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.800000+00:00', 'EUR/USD', '1734093', '1.05181', 'CBOE');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.8', 'GBP/EUR', '1258454', '1.3521', 'UBS');
 
-INSERT INTO data (date, pair, quantity, price, providers) VALUES ('2018-01-01 00:00:00.900000+00:00', 'GBP/USD', '1828291', '1.63939', 'UBS');
+INSERT INTO data (date, pair, quantity, price, provider) VALUES ('1514764800.9', 'GBP/EUR', '1683975', '2.86516', 'UBS');

@@ -1,4 +1,3 @@
-from numpy.core.fromnumeric import repeat
 import pandas as pd
 import numpy as np
 import sys
@@ -34,9 +33,10 @@ def generate_dataframe(rows: int, pairs: list, providers: list) -> pd.DataFrame:
         "pair": np.random.choice(pairs, rows, p=pairs_probability),
         "quantity": np.random.randint(QTY_MIN, QTY_MAX, size=rows),
         "price": np.random.choice(np.arange(PRICE_MIN, PRICE_MAX, PRICE_STEP), size=rows),
-        "providers": np.random.choice(providers, rows, p=providers_probability)
+        "provider": np.random.choice(providers, rows, p=providers_probability)
     })
 
+    df.date = df.date.apply(lambda x: round(pd.Timestamp(x).timestamp(), 1))
     df.price = df.price.apply(lambda x: round(x, 5))
 
     return df
