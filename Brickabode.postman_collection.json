@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "a965363d-62b4-455f-99a2-10dba916476d",
+		"name": "Brickabode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Market Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/marketData?provider=UBS&pair=GBP/EUR&minPrice=&minQuantity=1178238",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"marketData"
+					],
+					"query": [
+						{
+							"key": "provider",
+							"value": "UBS",
+							"description": "default: null (Return all) Ex.: \"UBS,CBOE\""
+						},
+						{
+							"key": "pair",
+							"value": "GBP/EUR",
+							"description": "default: null (Return all) Ex.:  \"EUR_GBP,EUR_USD\""
+						},
+						{
+							"key": "startDate",
+							"value": null,
+							"description": "default: null (Return all) Ex.: 1638548090",
+							"disabled": true
+						},
+						{
+							"key": "endDate",
+							"value": null,
+							"description": "default: null (Return all) Ex.: 1638548091",
+							"disabled": true
+						},
+						{
+							"key": "minPrice",
+							"value": "",
+							"description": "default: null (Return all) Ex.:  1.243"
+						},
+						{
+							"key": "maxPrice",
+							"value": null,
+							"description": "default: null (Return all) Ex.: 1.455",
+							"disabled": true
+						},
+						{
+							"key": "minQuantity",
+							"value": "1178238",
+							"description": "default: null (Return all) Ex.: 100000"
+						},
+						{
+							"key": "maxQuantity",
+							"value": null,
+							"description": "default: null (Return all) Ex.: 300000",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get market data"
+			},
+			"response": []
+		}
+	]
+}
